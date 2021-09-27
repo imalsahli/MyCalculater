@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorEdgeEffect"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/tvDisp"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:hint="Result"
+        android:textColor="#2196F3"
+        android:gravity="center_horizontal"
+        android:textSize="39sp" />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <!-- first row 7, 8, 9, + -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="7"
+                android:textSize="30sp"
+                android:onClick="press7"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="8"
+                android:textSize="30sp"
+                android:onClick="press8"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="9"
+                android:textSize="30sp"
+                android:onClick="press9"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="+"
+                android:textSize="30sp"
+                android:onClick="pressPluse"
+                android:padding="10px"/>
+
+
+
+        </TableRow>
+        <!-- second row 4, 5, 6, 10 -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="4"
+                android:textSize="30sp"
+                android:onClick="press4"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="5"
+                android:textSize="30sp"
+                android:onClick="press5"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="6"
+                android:textSize="30sp"
+                android:onClick="press6"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="-"
+                android:textSize="30sp"
+                android:onClick="pressMines"
+                android:padding="10px"/>
+
+
+
+        </TableRow>
+        <!-- second row 1, 2, 3, 0 -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="1"
+                android:textSize="30sp"
+                android:onClick="press1"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="2"
+                android:textSize="30sp"
+                android:onClick="press2"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="3"
+                android:textSize="30sp"
+                android:onClick="press3"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="X"
+                android:textSize="30sp"
+                android:onClick="pressX"
+                android:padding="10px"/>
+
+
+
+        </TableRow>
+        <!-- second row ., 0, =, / -->
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="."
+                android:textSize="30sp"
+                android:onClick="pressDot"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="0"
+                android:textSize="30sp"
+                android:onClick="press0"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="="
+                android:textSize="30sp"
+                android:onClick="pressEquals"
+                android:padding="10px"
+                />
+            <Button
+                android:layout_height="100px"
+                android:layout_width="100px"
+                android:text="/"
+                android:textSize="30sp"
+                android:onClick="pressSubtract"
+                android:padding="10px"
+                />
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="12dp"
+                android:layout_height="100px"
+                android:onClick="pressC"
+                android:padding="10px"
+                android:text="C"
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
